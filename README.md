@@ -37,6 +37,8 @@ java –jar build/libs/MiniC-Scanner.jar {input-path} > {output-path}
 ```
 
 #### Parser
+
+
 #### AST Generation
 #### Static Semantic Analysis
 #### Code Generation
@@ -45,3 +47,5 @@ java –jar build/libs/MiniC-Scanner.jar {input-path} > {output-path}
 ### Environment
 OS: Mac Ventura
 Language: Java
+Build: [gradle](https://gradle.org/)
+**Check detail [About Gradle](docs/about_gradle.md)**
