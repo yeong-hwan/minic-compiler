@@ -2,7 +2,7 @@
 
 ### directory description
 - MiniC/MiniC.java: this is the main program (driver) of our MiniC compiler.
-- MiniC/Scanner/Scanner.java: a skeleton scanner to be completed by you.
+- MiniC/Scanner/Scanner.java: a main scanner
 - MiniC/Scanner/Token.java: definitions of all MiniC tokens, and a method for separating keywords from identifiers.
 - MiniC/Scanner/SourceFile.java: handling of source files.
 - MiniC/Scanner/SourcePos.java: a class to handle source positions (line and column numbers) of tokens.
