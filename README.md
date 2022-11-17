@@ -13,17 +13,21 @@
   <img src="docs/img/code_structure.png" alt="drawing" width="400"/>
 </p>
 
-#### Scanner
-This scanner read a character stream from a MiniC source file and translate it to a sequence of MiniC tokens.
-This is known as the lexical analysis part of a compiler.
 
 ## How to run
+
 ```zsh
 # build
 ./gradlew clean
 ./gradlew build
 ```
-#### Scanner
+
+
+### Scanner
+This scanner read a character stream from a MiniC source file and translate it to a sequence of MiniC tokens.
+This is known as the lexical analysis part of a compiler.
+
+**[Scanner Description](docs/descriptions/scanner_description.md)**
 
 ```zsh
 # running and testing scanner
@@ -36,16 +40,41 @@ java -jar build/libs/MiniC-Scanner.jar MiniC/Scanner/tst/base/testcases/c1.txt
 java –jar build/libs/MiniC-Scanner.jar {input-path} > {output-path}
 ```
 
-#### Parser
+
+### Parser
+A recursive descent parser (RD parser) for MiniC.
+(only check the syntactic correctness of the input program)
+
+**[Parser Description](docs/descriptions/parser_description.md)**
+
+```zsh
+# build for parser(Recommended)
+./gradlew jarNoScanner
+
+# running and testing parser
+java -jar {input-path}
+
+# example
+java -jar build/libs/MiniC-Parser.jar MiniC/Parser/tst/base/testcases/c1.txt
+```
+jarNoScanner: sacnning with perfect scanner on library
+jar: scanning with custom scanner
 
 
-#### AST Generation
-#### Static Semantic Analysis
-#### Code Generation
+### AST Generation
+Extend recursive descent parser to produce Abstract Syntax Trees (ASTs) for MiniC. 
+If a program is syntactically legal, then the parser must build the AST for the program. Otherwise the parser can print any error message and exit without completing the AST for the illegal input program.
+
+
+
+### Static Semantic Analysis
+
+
+### Code Generation
 
 --- 
 ### Environment
 OS: Mac Ventura
-Language: Java
+Language: Java (JDK 17)
 Build: [gradle](https://gradle.org/)
 **Check detail [About Gradle](docs/about_gradle.md)**
