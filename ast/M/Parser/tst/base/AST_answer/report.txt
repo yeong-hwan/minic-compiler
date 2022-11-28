@@ -1,0 +1,3 @@
+AST Test Report
+generated Sat Dec 3 06:28:17 KST 2022
+c*.mc succeded

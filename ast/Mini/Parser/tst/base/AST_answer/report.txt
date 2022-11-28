@@ -1,0 +1,7 @@
+AST Test Report
+<<<<<<< HEAD
+generated Sat Dec 3 09:20:02 KST 2022
+=======
+generated Sat Dec 10 22:19:31 KST 2022
+>>>>>>> assignment_3_debug
+c*.mc succeded

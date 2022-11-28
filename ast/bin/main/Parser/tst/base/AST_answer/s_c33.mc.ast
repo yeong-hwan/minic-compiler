@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+********** MiniC Compiler **********
+Syntax Analysis ...
+=======
+Program
+   DeclSequence
+      VarDecl
+         IntType
+         ID: a
+         EmptyExpr
+      DeclSequence
+         VarDecl
+            IntType
+            ID: b
+            EmptyExpr
+         DeclSequence
+            VarDecl
+               IntType
+               ID: c
+               EmptyExpr
+            DeclSequence
+               VarDecl
+                  IntType
+                  ID: d
+                  EmptyExpr
+               EmptyDecl
+>>>>>>> assignment_3_debug
