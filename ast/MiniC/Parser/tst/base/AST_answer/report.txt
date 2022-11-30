@@ -1,0 +1,67 @@
+AST Test Report
+<<<<<<< HEAD
+generated Sat Dec 3 06:23:19 KST 2022
+=======
+generated Sat Dec 10 23:21:17 KST 2022
+>>>>>>> assignment_3_debug
+c1.mc succeded
+c10.mc failed
+c11.mc failed
+c12.mc succeded
+c13.mc succeded
+c14.mc succeded
+c15.mc failed
+c16.mc failed
+c17.mc failed
+c18.mc failed
+c19.mc failed
+<<<<<<< HEAD
+c2.mc failed
+=======
+c2.mc succeded
+>>>>>>> assignment_3_debug
+c20.mc failed
+c21.mc failed
+c22.mc failed
+c23.mc failed
+c24.mc failed
+c25.mc failed
+c26.mc failed
+c27.mc failed
+c28.mc failed
+c29.mc failed
+<<<<<<< HEAD
+c3.mc failed
+c30.mc failed
+c31.mc failed
+c32.mc failed
+c33.mc failed
+c34.mc failed
+c35.mc failed
+=======
+c3.mc succeded
+c30.mc failed
+c31.mc failed
+c32.mc failed
+c33.mc succeded
+c34.mc failed
+c35.mc succeded
+>>>>>>> assignment_3_debug
+c36.mc failed
+c37.mc failed
+c38.mc failed
+c39.mc failed
+c4.mc succeded
+c40.mc succeded
+c41.mc failed
+c42.mc failed
+c5.mc succeded
+c6.mc succeded
+<<<<<<< HEAD
+c7.mc failed
+c8.mc failed
+=======
+c7.mc succeded
+c8.mc succeded
+>>>>>>> assignment_3_debug
+c9.mc succeded

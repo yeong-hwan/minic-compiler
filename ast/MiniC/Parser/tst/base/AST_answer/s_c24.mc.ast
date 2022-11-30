@@ -1,0 +1,16 @@
+********** MiniC Compiler **********
+Syntax Analysis ...
+<<<<<<< HEAD
+=======
+RE
+i
+U
+i
+0
+PL
+i
+0
+ID
+ERROR: ")" expected here 11..12, line 2.
+Compilation was unsuccessful.
+>>>>>>> assignment_3_debug

@@ -1,0 +1,35 @@
+<<<<<<< HEAD
+********** MiniC Compiler **********
+Syntax Analysis ...
+=======
+Program
+   DeclSequence
+      FunDecl
+         VoidType
+         ID: main
+         EmptyFormalParamDecl
+         CompoundStmt
+            DeclSequence
+               VarDecl
+                  IntType
+                  ID: a
+                  EmptyExpr
+               DeclSequence
+                  VarDecl
+                     IntType
+                     ID: b
+                     EmptyExpr
+                  DeclSequence
+                     VarDecl
+                        IntType
+                        ID: c
+                        EmptyExpr
+                     DeclSequence
+                        VarDecl
+                           IntType
+                           ID: d
+                           EmptyExpr
+                        EmptyDecl
+            EmptyStmt
+      EmptyDecl
+>>>>>>> assignment_3_debug

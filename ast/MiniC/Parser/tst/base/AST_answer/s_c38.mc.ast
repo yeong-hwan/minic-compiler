@@ -1,0 +1,8 @@
+********** MiniC Compiler **********
+Syntax Analysis ...
+<<<<<<< HEAD
+ERROR: ";" expected here 10..10, line 2.
+=======
+ERROR: "ID" expected here 13..13, line 2.
+>>>>>>> assignment_3_debug
+Compilation was unsuccessful.

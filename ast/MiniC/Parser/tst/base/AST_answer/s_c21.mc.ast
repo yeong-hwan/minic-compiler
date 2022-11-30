@@ -1,0 +1,25 @@
+********** MiniC Compiler **********
+Syntax Analysis ...
+<<<<<<< HEAD
+=======
+RE
+i
+U
+i
+0
+PL
+i
+0
+ID
+RE
+100
+U
+100
+15
+PL
+100
+15
+IL
+ERROR: ";" expected here 16..16, line 2.
+Compilation was unsuccessful.
+>>>>>>> assignment_3_debug

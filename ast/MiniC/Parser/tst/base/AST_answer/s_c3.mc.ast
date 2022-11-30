@@ -1,0 +1,24 @@
+<<<<<<< HEAD
+********** MiniC Compiler **********
+Syntax Analysis ...
+=======
+Program
+   DeclSequence
+      VarDecl
+         IntType
+         ID: i
+         EmptyExpr
+      DeclSequence
+         VarDecl
+            BoolType
+            ID: b
+            BoolExpr
+               BoolLiteral: true
+         DeclSequence
+            VarDecl
+               FloatType
+               ID: pi
+               FloatExpr
+                  FloatLiteral: 3.1415
+            EmptyDecl
+>>>>>>> assignment_3_debug
