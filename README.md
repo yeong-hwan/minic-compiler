@@ -57,13 +57,47 @@ java -jar {input-path}
 # example
 java -jar build/libs/MiniC-Parser.jar MiniC/Parser/tst/base/testcases/c1.txt
 ```
-jarNoScanner: sacnning with perfect scanner on library
-jar: scanning with custom scanner
+- jarNoScanner: sacnning with perfect scanner on library 
+- jar: scanning with custom scanner
 
 
 ### AST Generation
 Extend recursive descent parser to produce Abstract Syntax Trees (ASTs) for MiniC. 
 If a program is syntactically legal, then the parser must build the AST for the program. Otherwise the parser can print any error message and exit without completing the AST for the illegal input program.
+
+**[AST Description](docs/descriptions/ast_generation.md)**
+
+The MiniC compiler accepts a set of command-line switches:
+- -ast to display the AST on-screen.
+- -astp to display the AST, including source positions.
+- -t <file> prints the AST in file <file>, using the TreePrinter.
+- -u <file> unparses the AST into file <file>.
+
+```zsh
+# build for AST generation
+./gradlew jarNoScanner
+
+# running and testing parser(ast-generation)
+java -jar build/libs/MiniC-AstGen.jar -option {input-path} {solution-path}
+
+# check difference between desirable
+diff {mytest.mc.u} {mytest.mc.u.u}
+
+# examples
+java -jar build/libs/MiniC-AstGen.jar -t MiniC/Parser/tst/base/AST_testcases/c3.mc.u MiniC/Parser/tst/base/AST_testcases/c3.mc
+
+java -jar build/libs/MiniC-AstGen.jar -u MiniC/Parser/tst/base/AST_testcases/c3.mc.u MiniC/Parser/tst/base/AST_testcases/c3.mc
+
+diff MiniC/Parser/tst/base/AST_testcases/c4.mc.u MiniC/Parser/tst/base/AST_testcases/c4.mc.u.u
+
+# drawing AST 
+java -jar build/libs/MiniC-AstGen.jar -astp MiniC/Parser/tst/base/AST_testcases/c3.mc.u
+```
+
+#### AST Drawing Example
+<p align="center">
+  <img src="docs/img/ast_example.png" alt="drawing" width="600"/>
+</p>
 
 
 
