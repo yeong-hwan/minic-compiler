@@ -14,6 +14,7 @@
 - [Scanner Description](docs/descriptions/scanner_description.md)
 - [Parser Description](docs/descriptions/parser_description.md)
 - [AST Description](docs/descriptions/ast_generation.md)
+- [Static Semantic Analysis](docs/descriptions/static_semantic_analysis.md)
 
 ## How to run
 
@@ -95,8 +96,24 @@ java -jar build/libs/MiniC-AstGen.jar -astp MiniC/Parser/tst/base/AST_testcases/
 </p>
 
 
-
 ### Static Semantic Analysis
+MiniC static semantic analysis ensures two types of constraints, namely scope rules and type rules.
+(check detail consist of two subphases by read [Description](docs/descriptions/static_semantic_analysis.md))
+
+The build tasks "jar" and "jarNoScanner" are the same as with AST generation. Build task **"jarNoScannerNoParser"** has been added
+
+- -ast1 to display the AST from the parser on-screen.
+- -ast2 to display the AST from semantic analysis on-screen.
+- -envast to display the AST of the MiniC standard environment on-screen.
+- -t <file> prints the AST from the parser in file <file>, using the TreePrinter.
+- -u <file> unparses the AST from the parser into file <file>.
+
+```zsh
+# build for Static Semantic Analysis
+./gradlew jarNoScannerNoParser
+
+# running and test commands are similar with AST commands
+```
 
 
 ### Code Generation
