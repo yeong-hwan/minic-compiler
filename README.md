@@ -15,6 +15,7 @@
 - [Parser Description](docs/descriptions/parser_description.md)
 - [AST Description](docs/descriptions/ast_generation.md)
 - [Static Semantic Analysis](docs/descriptions/static_semantic_analysis.md)
+- [Code Generation](docs/descriptions/code_generation.md)
 
 ## How to run
 
@@ -117,10 +118,30 @@ The build tasks "jar" and "jarNoScanner" are the same as with AST generation. Bu
 
 
 ### Code Generation
+Code generator will take our decorated ASTs as input. We will generate code for the Java Virtual Machine (JVM). Specifically, we will generate assembly instructions that will be assembled to Java class files by the Jasmin bytecode assembler. This class files can then be executed on the JVM.
+
+
+```zsh
+# build for Static Semantic Analysis
+./gradlew jarNoScannerNoParser
+
+# opening file
+java -jar build/libs/MiniC-CodeGen.jar {file_name.mc}
+
+# make class file from assembly
+jasmin {jarfile_name.j}
+
+# access jarfile
+java -jar resources/jasmin_2.4/jasmin.jar {jarfile_name.j}
+```
+
 
 --- 
 ### Environment
 OS: Mac Ventura  
 Language: Java (JDK 17)  
 Build: [gradle](https://gradle.org/)  
-- Check detail **[About Gradle](docs/about_gradle.md)**
+Assembler: [Jasmin](https://jasmine.github.io/index.html)
+
+- [About Gradle](docs/about_gradle.md)
+- [Jasmin Instruction](https://jasmin.sourceforge.net/instructions.html)
